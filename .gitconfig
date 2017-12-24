@@ -1,0 +1,25 @@
+[user]
+	name = zimyuan
+	email = '1229084233@qq.com'
+[http]
+[core]
+	autocrlf = false
+[alias]
+	# 暂存所有文件
+	a = add .
+	# 将暂存区的文件提交
+	c = commit -m 
+	# 查看最后五条日志
+	lg = log --oneline -5
+	# 将当前仓库推到远程仓库
+	p = push origin master
+	# 取消文件暂存
+	reset = reset --hard HEAD
+	# 获取当前文件状态
+	s = status
+	# 查看最后一次提交的详情
+	last = log -1 HEAD
+	# 以图表的形式查看最近几条日志
+	lgg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative -20
+	# 切换分支
+	co = checkout
